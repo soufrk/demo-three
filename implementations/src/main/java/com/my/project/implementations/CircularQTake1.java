@@ -2,7 +2,7 @@ package com.my.project.implementations;
 
 import java.util.Formatter;
 
-public class CircularQ {
+public class CircularQTake1 {
 
     private static Node HEAD, REAR;
     private static int SIZE;
