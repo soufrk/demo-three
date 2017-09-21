@@ -27,8 +27,8 @@ public class CircularOueueUsingLink {
     /**
      * First enqueue operation.
      */
-    public static void main(String[] args) {
-	CircularQ newInstance = new CircularQ(2);
+    public static void main1(String[] args) {
+	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
 	newInstance.enqueue(10);
     }
     
