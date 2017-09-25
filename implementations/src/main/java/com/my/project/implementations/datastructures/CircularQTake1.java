@@ -1,4 +1,4 @@
-package com.my.project.implementations;
+package com.my.project.implementations.datastructures;
 
 import java.util.Formatter;
 

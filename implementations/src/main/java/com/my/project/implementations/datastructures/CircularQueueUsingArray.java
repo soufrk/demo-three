@@ -1,4 +1,4 @@
-package com.my.project.implementations;
+package com.my.project.implementations.datastructures;
 
 /**
  * Unguided take, implementing a circular queue

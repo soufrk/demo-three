@@ -1,4 +1,4 @@
-package com.my.project.implementations;
+package com.my.project.implementations.datastructures;
 
 /**
  * 2nd attempt at implementing circular-queue post success
@@ -8,7 +8,7 @@ package com.my.project.implementations;
  * @author soufrk
  *
  */
-public class CircularOueueUsingLink {
+public class CircularQueueUsingLink {
     
     private static Node HEAD, TAIL;
     private static int CURRENT_SIZE, MAX_SIZE;

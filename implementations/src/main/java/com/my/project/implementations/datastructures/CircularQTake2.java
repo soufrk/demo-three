@@ -1,4 +1,4 @@
-package resources;
+package com.my.project.implementations.datastructures;
 
 import java.util.Formatter;
 
@@ -10,7 +10,7 @@ import java.util.Formatter;
  * 
  * Example: Ticket Counter
  * 
- * @author souvik.goswami
+ * @author soufrk
  *
  */
 public class CircularQTake2 {
