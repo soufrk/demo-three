@@ -90,7 +90,7 @@ public class CircularQTake3 {
      * Sanity of new added methods.
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main7(String[] args) {
 	CircularQTake3 queue = new CircularQTake3(2);
 	System.out.println(queue);
 	System.out.println(queue.getCurrentSize());
@@ -145,7 +145,6 @@ public class CircularQTake3 {
 	} else {
 	    System.out.println("The queue is full !!");
 	}
-	
     }
     
     // Notice, we make this class private to comply with
@@ -194,5 +193,5 @@ public class CircularQTake3 {
  * 
  * Spend some time to analyze what might be going wrong.
  * 
- * HINT: Does the insert() method take care of the size ?
+ * HINT: Have a utility method to check if queue is empty.
  */
