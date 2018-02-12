@@ -53,7 +53,7 @@ public class CircularQTake1 {
 	n.setValue(i);
 	// 3. Set the next pointer to null.
 	n.setNext(null);
-	// 4. Let the HEAD point to current node
+	// 4. Let the HEAD point to current node.
 	HEAD = n;
 	// 5. Let REAR point to null.
 	REAR = null;
