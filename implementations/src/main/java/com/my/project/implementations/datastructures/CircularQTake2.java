@@ -30,16 +30,43 @@ public class CircularQTake2 {
 	SIZE = size;
     }
 
-    public static void main(String[] args) {
-	//CircularQ newInstance = new CircularQ();
+    /**
+     * Let's test basic functionality.
+     * @param args
+     */
+    public static void main1(String[] args) {
 	CircularQTake2 newInstance = new CircularQTake2(2);
 	newInstance.insert(10);
-	//System.out.println(newInstance);
-	//System.out.println(newInstance.getFirst());
-	//System.out.println(newInstance.getLast());
 	newInstance.insert(20);
-	//System.out.println(newInstance.getFirst());
-	//System.out.println(newInstance.getLast());
+	System.out.println(newInstance);
+	newInstance.insert(30);
+	System.out.println(newInstance);
+    }
+    
+    /**
+     * This is an added functionality.
+     * @param args
+     */
+    public static void main(String[] args) {
+	CircularQTake2 newInstance = new CircularQTake2(2);
+	newInstance.insert(10);
+	System.out.println(newInstance);
+	System.out.println(newInstance.getFirst());
+	System.out.println(newInstance.getLast());
+	newInstance.insert(20);
+	System.out.println(newInstance);
+	System.out.println(newInstance.getFirst());
+	System.out.println(newInstance.getLast());
+    }
+    
+    /**
+     * Let's try breaking this design.
+     * @param args
+     */
+    public static void main3(String[] args) {
+	CircularQTake2 newInstance = new CircularQTake2(2);
+	newInstance.insert(10);
+	newInstance.insert(20);
 	System.out.println(newInstance);
 	newInstance.insert(30);
 	System.out.println(newInstance);
@@ -100,8 +127,12 @@ public class CircularQTake2 {
 
 }
 /*
- * The earlier problems have been resolved. But now, we have
- * a new problem with this implementation.
+ * The earlier problems have been resolved. Features added,
+ * 1.) getLast(), shows REAR element value, and
+ * 2.) getFirst() methods, which show the HEAD element value.
+ * 
+ * But now, we have a new problem with this implementation.
+ * 1.) Queue with first element inserted, is not printed properly.
  * 1.) Elements can still be added after specifying the size.
  * 
  * Spend some time to analyze what might be going wrong.
