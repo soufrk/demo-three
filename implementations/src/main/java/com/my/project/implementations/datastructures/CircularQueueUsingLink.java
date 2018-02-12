@@ -13,12 +13,12 @@ public class CircularQueueUsingLink {
     private static Node HEAD, TAIL;
     private static int CURRENT_SIZE, MAX_SIZE;
     
-    CircularOueueUsingLink(){
+    public CircularQueueUsingLink(){
 	HEAD = null;
 	TAIL = null;
     }
     
-    CircularOueueUsingLink(int size){
+    public CircularQueueUsingLink(int size){
 	this();
 	MAX_SIZE = size;
 	CURRENT_SIZE = 0;
@@ -28,7 +28,7 @@ public class CircularQueueUsingLink {
      * First enqueue operation.
      */
     public static void main1(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
     }
     
@@ -41,7 +41,7 @@ public class CircularQueueUsingLink {
      * And, it works !!!
      */
     public static void main2(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
     }
@@ -55,7 +55,7 @@ public class CircularQueueUsingLink {
      * And, no exceptions, need to print the queue and check !!!
      */
     public static void main3(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
@@ -66,7 +66,7 @@ public class CircularQueueUsingLink {
      * Outcome - Works fine
      */
     public static void main4(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
@@ -78,7 +78,7 @@ public class CircularQueueUsingLink {
      * Outcome - Works fine
      */
     public static void main5(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
@@ -91,7 +91,7 @@ public class CircularQueueUsingLink {
      * Outcome - Works fine
      */
     public static void main6(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
@@ -105,7 +105,7 @@ public class CircularQueueUsingLink {
      * Outcome - Works fine
      */
     public static void main7(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
@@ -120,7 +120,7 @@ public class CircularQueueUsingLink {
      * Outcome - Works fine
      */
     public static void main(String[] args) {
-	CircularOueueUsingLink newInstance = new CircularOueueUsingLink(2);
+	CircularQueueUsingLink newInstance = new CircularQueueUsingLink(2);
 	newInstance.enqueue(10);
 	System.out.println(newInstance);
 	newInstance.enqueue(20);
