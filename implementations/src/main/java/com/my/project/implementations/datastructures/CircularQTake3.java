@@ -43,6 +43,8 @@ public class CircularQTake3 {
      */
     public static void main3(String[] args) {
 	CircularQTake3 queue = new CircularQTake3(2);
+	System.out.println(queue);
+	
 	queue.insert(10);
 	System.out.println(queue);
 	System.out.println(queue.getFirst());
@@ -58,7 +60,7 @@ public class CircularQTake3 {
      * Verifying newly added functionality.
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main4(String[] args) {
 	CircularQTake3 queue = new CircularQTake3(2);
 	queue.insert(10);
 	System.out.println(queue);
@@ -66,6 +68,30 @@ public class CircularQTake3 {
 	System.out.println(queue.getSize());
 	
 	queue.insert(20);
+	System.out.println(queue);
+	System.out.println(queue.getCurrentSize());
+	System.out.println(queue.getSize());
+    }
+    
+    /**
+     * Let's try to break the design.
+     * @param args
+     */
+    public static void main6(String[] args) {
+	CircularQTake3 queue = new CircularQTake3(2);
+	System.out.println(queue);
+	System.out.println(queue.getFirst());
+	System.out.println(queue.getLast());
+	System.out.println(queue.getCurrentSize());
+	System.out.println(queue.getSize());
+    }
+    
+    /**
+     * Sanity of new added methods.
+     * @param args
+     */
+    public static void main(String[] args) {
+	CircularQTake3 queue = new CircularQTake3(2);
 	System.out.println(queue);
 	System.out.println(queue.getCurrentSize());
 	System.out.println(queue.getSize());
@@ -158,3 +184,15 @@ public class CircularQTake3 {
     }
 
 }
+/*
+ * The earlier problems have been resolved. Features added,
+ * 1.) getSize(), returns the total size, and
+ * 2.) getCurrentSize(), returns the current size of the queue.
+ * 
+ * But, we have new problems with this implementation.
+ * 1.) getFirst(), fails on empty queue.
+ * 
+ * Spend some time to analyze what might be going wrong.
+ * 
+ * HINT: Does the insert() method take care of the size ?
+ */
