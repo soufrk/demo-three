@@ -204,11 +204,3 @@ public class CircularQTake6 {
     }
 
 }
-/*
- * Here are the problems with this design,
- * 1.) HEAD always points to recently inserted element.
- * 
- * Spend some time to analyze what might be going wrong.
- * 
- * HINT: Does the insert() method create a chain ?
- */
