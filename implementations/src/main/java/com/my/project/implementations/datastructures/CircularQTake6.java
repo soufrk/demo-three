@@ -204,3 +204,7 @@ public class CircularQTake6 {
     }
 
 }
+/*
+ * Future work ahead,
+ * 1.) The design needs to made a generic one.
+ */
