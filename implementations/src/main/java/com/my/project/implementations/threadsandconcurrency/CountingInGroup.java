@@ -1,4 +1,4 @@
-package com.my.project.threadsandconcurrency;
+package com.my.project.implementations.threadsandconcurrency;
 
 /**
  * The objective is to have a bunch of threads each counting to a target

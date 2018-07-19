@@ -1,28 +1,27 @@
-package designpatterns;
+package com.my.project.implementations.designpatterns.structural;
 
 public class DecoratorPattern01 {
 
-	public static void main(String[] args) {
-		/*
-		 * Component component = new ComponentA(); ComponentDecorator decorator
-		 * = new NowShowing(component); decorator.show();
-		 */
+    public static void main(String[] args) {
+	/*
+	 * Component component = new ComponentA(); ComponentDecorator decorator = new
+	 * NowShowing(component); decorator.show();
+	 */
 
-		/*// Select a Component to be decorated
-		Component component = new ComponentB();
-		// Select a Decorator for decoration.
-		ComponentDecorator decorator = new NowShowing(component);
-		// Delegate decoration
-		decorator.show();*/
-		
-		// Select a Component to be decorated
-		Component component = new ComponentB();
-		// Select a Decorator for decoration.
-		ComponentDecorator decorator = new ToniteShowing(component);
-		// Delegate decoration
-		decorator.show();
+	/*
+	 * // Select a Component to be decorated Component component = new ComponentB();
+	 * // Select a Decorator for decoration. ComponentDecorator decorator = new
+	 * NowShowing(component); // Delegate decoration decorator.show();
+	 */
 
-	}
+	// Select a Component to be decorated
+	Component component = new ComponentB();
+	// Select a Decorator for decoration.
+	ComponentDecorator decorator = new ToniteShowing(component);
+	// Delegate decoration
+	decorator.show();
+
+    }
 
 }
 
@@ -34,12 +33,12 @@ public class DecoratorPattern01 {
  */
 abstract class Component {
 
-	/**
-	 * Encapsulating the functionality to be decorated.
-	 */
-	public void show() {
-		System.out.println("Method not implemented");
-	}
+    /**
+     * Encapsulating the functionality to be decorated.
+     */
+    public void show() {
+	System.out.println("Method not implemented");
+    }
 }
 
 /**
@@ -52,16 +51,16 @@ abstract class Component {
  */
 abstract class ComponentDecorator extends Component {
 
-	/**
-	 * Instance of the component
-	 */
-	Component component;
+    /**
+     * Instance of the component
+     */
+    Component component;
 
-	/**
-	 * Functionality of decorating. To be implemented by each decorator.
-	 */
-	@Override
-	abstract public void show();
+    /**
+     * Functionality of decorating. To be implemented by each decorator.
+     */
+    @Override
+    abstract public void show();
 
 }
 
@@ -72,11 +71,11 @@ abstract class ComponentDecorator extends Component {
  *
  */
 class ComponentA extends Component {
-	
-	@Override
-	public void show() {
-		System.out.print("showing A");
-	}
+
+    @Override
+    public void show() {
+	System.out.print("showing A");
+    }
 }
 
 /**
@@ -86,10 +85,10 @@ class ComponentA extends Component {
  *
  */
 class ComponentB extends Component {
-	@Override
-	public void show() {
-		System.out.print("showing B");
-	}
+    @Override
+    public void show() {
+	System.out.print("showing B");
+    }
 }
 
 /**
@@ -100,25 +99,25 @@ class ComponentB extends Component {
  */
 class NowShowing extends ComponentDecorator {
 
-	/**
-	 * Assigning instance of the Component
-	 * 
-	 * @param component
-	 */
-	public NowShowing(Component component) {
-		this.component = component;
-	}
+    /**
+     * Assigning instance of the Component
+     * 
+     * @param component
+     */
+    public NowShowing(Component component) {
+	this.component = component;
+    }
 
-	/**
-	 * Providing implementation of implementation of this Decorator.
-	 */
-	@Override
-	public void show() {
-		System.out.print("Now, ");
-		component.show();
-		System.out.println("");
+    /**
+     * Providing implementation of implementation of this Decorator.
+     */
+    @Override
+    public void show() {
+	System.out.print("Now, ");
+	component.show();
+	System.out.println("");
 
-	}
+    }
 
 }
 
@@ -130,24 +129,24 @@ class NowShowing extends ComponentDecorator {
  */
 class ToniteShowing extends ComponentDecorator {
 
-	/**
-	 * Assigning instance of the Component
-	 * 
-	 * @param component
-	 */
-	public ToniteShowing(Component component) {
-		this.component = component;
-	}
+    /**
+     * Assigning instance of the Component
+     * 
+     * @param component
+     */
+    public ToniteShowing(Component component) {
+	this.component = component;
+    }
 
-	/**
-	 * Providing implementation of implementation of this Decorator.
-	 */
-	@Override
-	public void show() {
-		System.out.print("Tonite we'r ");
-		component.show();
-		System.out.println("");
+    /**
+     * Providing implementation of implementation of this Decorator.
+     */
+    @Override
+    public void show() {
+	System.out.print("Tonite we'r ");
+	component.show();
+	System.out.println("");
 
-	}
+    }
 
 }

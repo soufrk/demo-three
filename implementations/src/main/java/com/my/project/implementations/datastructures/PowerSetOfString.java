@@ -1,4 +1,4 @@
-package com.my.project.implementations;
+package com.my.project.implementations.datastructures;
 
 /**
  * Power set of String - Take 1

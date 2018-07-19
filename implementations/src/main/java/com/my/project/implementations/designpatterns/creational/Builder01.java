@@ -1,4 +1,4 @@
-package designpatterns;
+package com.my.project.implementations.designpatterns.creational;
 
 /**
  * Simple builder implementation.
