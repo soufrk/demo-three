@@ -1,4 +1,4 @@
-package com.my.project.implemetations.threadsandconcurrency;
+package com.my.project.implementations.threadsandconcurrency;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -48,9 +48,9 @@ public class ReadWriteLockSimulation {
 
 	t1.start();
 	t2.start();
-	/*t3.start();
+	t3.start();
 	t4.start();
-	t5.start();*/
+	t5.start();
 	
 	String input = "";
 	do{
