@@ -3,7 +3,7 @@ package com.my.project.implementations.dynamicprogramming;
 /**
  * Sample implementation of Factorial - iteration vs recursion.
  * 
- * @author sofrk
+ * @author soufrk
  *
  */
 public class Factorial1 {
