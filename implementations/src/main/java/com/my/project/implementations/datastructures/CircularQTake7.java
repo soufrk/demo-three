@@ -227,6 +227,9 @@ public class CircularQTake7<T> {
 }
 
 /*
+ * Minor design problem,
+ * 1.) Variables SIZE, CURRENT_SIZE are static and hence break the behaviour of a utility class.
+ * 
  * Major design problem,
  * 1.) The queue needs to be initialized with size, if not, it results in an exception.
  * 2.) Should post assignment of queue size be an answer. If so, do we need checks.
