@@ -84,15 +84,7 @@ public class CircularQTake7<T> {
 	}
     }
     
-    /**
-     * Try breaking the design
-     */
-    public static void main(String[] args) {
-	CircularQTake7<Double> q = new CircularQTake7<>();
-	q.enqueue(1.05d);
-    }
-    
-    public static void main7(String[] args) {
+    public static void main5(String[] args) {
 	CircularQTake7<String> q = new CircularQTake7<>(2);
 	q.enqueue("Abc");
 	System.out.println(q);
@@ -105,6 +97,26 @@ public class CircularQTake7<T> {
 	}
 	q.dequeue();
 	System.out.println(q);
+    }
+    
+    /**
+     * Try breaking the design
+     */
+    public static void main(String[] args) {
+	CircularQTake7<Double> q1 = new CircularQTake7<>(3);
+	q1.enqueue(1.05d);
+	q1.enqueue(2.05d);
+	q1.enqueue(3.05d);
+	System.out.println(CircularQTake7.CURRENT_SIZE);
+	CircularQTake7<String> q2 = new CircularQTake7<>(3);
+	System.out.println(CircularQTake7.CURRENT_SIZE);
+	q1.enqueue(4.05d);
+	q2.enqueue("Abc");
+	q2.enqueue("Bcd");
+	q2.enqueue("Cde");
+	q1.dequeue();
+	System.out.println(q1);
+	System.out.println(q2);
     }
 
     private Node<T> HEAD, REAR;
