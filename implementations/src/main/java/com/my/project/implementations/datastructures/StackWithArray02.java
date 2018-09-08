@@ -9,6 +9,7 @@ package com.my.project.implementations.datastructures;
  * Use array of Object instead</li>
  * <li>2. Missing returns in <tt>push()</tt> and <tt>pop()</tt> methods</li>
  * <li>3. Useless parameter declaration in <tt>pop()</tt> method</li>
+ * <li>4. Missing method <tt>peek()</tt></li>
  * </ul>
  * Question: Will this demonstrate behaviour of stack correctly ?
  * 
