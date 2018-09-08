@@ -7,16 +7,13 @@ package com.my.project.implementations.datastructures;
  * <pre>public StackWithArray02(int size) {
  *    stack = new Node<>[size];</pre>
  * Use array of Object instead</li>
- * <li>1. Redundant type declaration <E> in methods push(), pop() etc</li>
- * <li>3. Name of Node-type as 'element' variable; use 'node'
- * <pre>    Node<E> element = null;</pre></li>
- * <li>4. Decalre nested class as <tt>private static</tt> not just <tt>private</tt></li>
- * <li>5. Wrong syntax of value, in nested class
- * <pre>    E e value;</pre></li>
+ * <li>2. Missing returns in <tt>push()</tt> and <tt>pop()</tt> methods</li>
+ * <li>3. Useless parameter declaration in <tt>pop()</tt> method</li>
  * </ul>
  * Question: Will this demonstrate behaviour of stack correctly ?
  * 
  * @author soufrk
+ * 
  */
 public class StackWithArray02<T> {
     private int maxSize, currSize;
