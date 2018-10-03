@@ -11,7 +11,7 @@ package com.my.project.implementations.datastructures;
  * <li>3. Useless parameter declaration in <tt>pop()</tt> method</li>
  * <li>4. Missing method <tt>peek()</tt></li>
  * </ul>
- * Question: Will this demonstrate behaviour of stack correctly ?
+ * Question: Is the implementation complete for a stack ?
  * 
  * @author soufrk
  * 
