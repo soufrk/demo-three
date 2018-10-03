@@ -35,7 +35,7 @@ public class StackWithArray02<T> {
 	return e;
     }
 
-    public T pop(T e) {
+    public T pop() {
 	T result = null;
 	if (currSize == 0)
 	    throw new IndexOutOfBoundsException("Stack is empty !!");
