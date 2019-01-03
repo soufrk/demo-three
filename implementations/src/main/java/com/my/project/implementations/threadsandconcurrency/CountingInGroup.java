@@ -20,7 +20,7 @@ public class CountingInGroup {
 
     public static void main(String[] args) {
 	//CountingInGroup object = new CountingInGroup(2, 3);
-	CountingInGroup object = new CountingInGroup(5, 20);
+	CountingInGroup object = new CountingInGroup(5, 2);
 	for (int i = 0; i < object.size; i++) {
 	    new CountingThread(object).start();
 	}
@@ -53,7 +53,8 @@ class CountingThread extends Thread {
 	    // increment value counter
 	    value++;
 	    System.out.println(getName() + " counts:" + value);
-	    if (value < REFERENCE.getTarget()) {
+	    //if (value < REFERENCE.getTarget() && memberCount < REFERENCE.getSize()) {
+	    if (memberCount < REFERENCE.getSize() && value <= REFERENCE.getTarget()) {	
 		//System.out.println(getName() + " trying to acquire lock on class");
 		try {
 		    // increment member counter
@@ -75,7 +76,7 @@ class CountingThread extends Thread {
 		} catch (Exception e) {
 		    e.printStackTrace();
 		}
-	    } else if (value == REFERENCE.getTarget()) {
+	    } else if (value > REFERENCE.getTarget()) {
 		STOP = true;
 	    }
 	}
