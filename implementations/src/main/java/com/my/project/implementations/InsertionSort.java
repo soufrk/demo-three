@@ -2,6 +2,14 @@ package com.my.project.implementations;
 
 import java.util.Arrays;
 
+/**
+ * Start with Insertion Sort.
+ * Array in left is always sorted. 
+ * Pick next element to right and find correct position in array to left. 
+ * 
+ * @author soufrk
+ *
+ */
 public class InsertionSort {
 
     public static void main(String[] args) {

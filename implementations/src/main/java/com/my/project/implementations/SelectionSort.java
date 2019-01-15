@@ -2,6 +2,14 @@ package com.my.project.implementations;
 
 import java.util.Arrays;
 
+/**
+ * Selection sort is like insertion sort.
+ * Difference - find highest/lowest in remainder array to be exchanged for current index. 
+ *
+ * 
+ * @author soufrk
+ *
+ */
 public class SelectionSort {
 
     public static void main(String[] args) {
